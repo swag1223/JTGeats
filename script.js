@@ -2,7 +2,7 @@ const Items = [
   {
         url: "images/kitchen-section-images/pizza1.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing: "$19",
 
@@ -10,7 +10,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza2.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -18,7 +18,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza3.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
          pricing : "$23",
 
@@ -26,7 +26,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza4.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
          pricing : "$23",
 
@@ -34,7 +34,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza5.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$25",
 
@@ -42,7 +42,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza6.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -50,7 +50,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza7.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -59,7 +59,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza8.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -67,7 +67,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza1.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -75,7 +75,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza2.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -83,7 +83,7 @@ const Items = [
     {
         url: "images/kitchen-section-images/pizza3.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -91,7 +91,7 @@ const Items = [
      {
         url: "images/kitchen-section-images/pizza4.jpg",
         ratings: 3.5,
-        decrip: "home made pizza",
+        descrip: "home made pizza",
         time: "50-60min",
         pricing : "$23",
 
@@ -102,13 +102,11 @@ const Items = [
 const cardsHome = document.querySelector(".cards-home");
 console.log(cardsHome);
 Items.forEach((item) => {
-    console.log(item);
     const productCard = document.createElement("div");
     productCard.classList.add("product-card");
     cardsHome.appendChild(productCard);
 
     const pizzaImage = document.createElement("img");
-    console.log(item.url);
     pizzaImage.setAttribute("src", `${item.url}`);
     pizzaImage.setAttribute("alt", "home-made-pizza");
     pizzaImage.setAttribute("width", "255");
@@ -125,7 +123,7 @@ Items.forEach((item) => {
     descriptionPrice.classList.add("description-price");
 
     const des = document.createElement("p");
-    des.innerHTML = `${item.decrip}`;
+    des.innerHTML = `${item.descrip}`;
     descriptionPrice.appendChild(des);
 
     const price = document.createElement("p");
@@ -216,7 +214,6 @@ submitDishBtn.addEventListener('click', () => {
 const foodVideo = document.getElementById("vdo1");
 
 const playVdoBtn = document.getElementById("playVdoBtn");
-// const pauseVdoBtn = document.getElementById("pauseVdo");
 
 playVdoBtn.addEventListener("click", () => {
     foodVideo.play();

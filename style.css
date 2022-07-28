@@ -94,7 +94,7 @@ nav {
     display: flex;
     height: 100vh;
     justify-content: space-between;
-   
+
     padding: 10% 10% 2% 10%;
     background-color: var(--green);
    
@@ -259,6 +259,7 @@ nav {
 .swiper-container{
     display: flex;
     align-items: center;
+   
 }
 .swiper {
     width: 850px;
