@@ -4,8 +4,7 @@ const Items = [
         ratings: 3.5,
         decrip: "home made pizza",
         time: "50-60min",
-        pricing: "$23",
-        // discount:"20%"
+        pricing: "$19",
 
     },
     {
@@ -37,7 +36,7 @@ const Items = [
         ratings: 3.5,
         decrip: "home made pizza",
         time: "50-60min",
-        pricing : "$23",
+        pricing : "$25",
 
     },
     {
@@ -112,7 +111,7 @@ Items.forEach((item) => {
     console.log(item.url);
     pizzaImage.setAttribute("src", `${item.url}`);
     pizzaImage.setAttribute("alt", "home-made-pizza");
-    pizzaImage.setAttribute("width", "252");
+    pizzaImage.setAttribute("width", "255");
     
     productCard.appendChild(pizzaImage);
 
