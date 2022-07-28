@@ -5,7 +5,7 @@ const Items = [
         decrip: "home made pizza",
         time: "50-60min",
         pricing: "$23",
-        discount:"20%"
+        // discount:"20%"
 
     },
     {
